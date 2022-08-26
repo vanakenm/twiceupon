@@ -2,22 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let regionName = "Agincourt";
+  let regionKind = "kingdom"
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex justify-center justify-items-center h-screen bg-blue-100">
+      <h1 className="text-6xl font-bold text-center  text-gray-800 m-auto">
+        Our story begins in the <span className="text-cyan-400">{regionKind}</span> of <span className="text-purple-400">{regionName}</span>
+      </h1>
     </div>
   );
 }

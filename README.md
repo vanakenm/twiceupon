@@ -1,3 +1,47 @@
+# Twice upon
+
+A fantasy world text based generator
+
+## Versions
+
+### v0: Once upon a time
+
+Single screen, "Our story begins in the <kingdom> of <name>".
+
+Big text, highlight on the words
+
+### v1: Arrays
+
+Get datas for:
+
+- place name (using list of nobles names from France)
+- place kind (Duchy/Kingdom/Empire/etc)
+
+### v2: Lord
+
+"At that time, <lord> was the ruler of <place>."
+
+## UX
+
+Full page "screens"
+
+- Arrow down to go to the next one
+- Small sidebar with the list
+- Clicking on a colored word allow to change it (reroll or select)
+  - This impacts the next screens!
+
+## Later
+
+Tech: save all results as a simple array that could be locally save (local storage or even url param)
+
+### Events
+
+### Sub region & rulers
+
+### Relations
+
+### Factions
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
