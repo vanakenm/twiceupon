@@ -1,0 +1,16 @@
+[
+    {
+        "code": "kg",
+        "value": "kingdom"
+    },{
+        "code": "pd",
+        "value": "princedom"
+    },
+    {
+        "code": "dc",
+        "value": "duchy"
+    },{
+        "code": "ct",
+        "value": "county"
+    }
+]

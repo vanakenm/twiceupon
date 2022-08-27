@@ -32,16 +32,28 @@ Full page "screens"
 
 ## Later
 
-Tech: save all results as a simple array that could be locally save (local storage or even url param)
+Models: Episode array - text with placeholders, name, data (code/value of what's needed there)
+- If no episode create the first one
+- When down arrow - go to next episode or create
+- If not at episode 1, show top arrow to (next/previous)
 
-### Events
+Data
+
+- save all results as a simple array that could be locally save (local storage or even url param)
+- or as "token" that can be send again to url (token=XXX -> recreate story)
 
 ### Sub region & rulers
 
 ### Relations
 
+
 ### Factions
 
+### Events
+
+- Place events
+- People events
+- Relation events
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
