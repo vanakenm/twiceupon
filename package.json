@@ -19,7 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "parse": "node src/scripts/wikipedia.js"
+    "load-families": "node src/scripts/wikipedia.js",
+    "load-first-names": "node src/scripts/firstNames.js"
   },
   "eslintConfig": {
     "extends": [

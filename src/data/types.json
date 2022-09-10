@@ -1,16 +1,20 @@
 [
     {
         "code": "kg",
-        "value": "kingdom"
-    },{
+        "value": "Kingdom",
+        "ruler": "King"
+        },{
         "code": "pd",
-        "value": "princedom"
+        "value": "Princedom",
+        "ruler": "Prince"
     },
     {
         "code": "dc",
-        "value": "duchy"
+        "value": "Duchy",
+        "ruler": "Duke"
     },{
         "code": "ct",
-        "value": "county"
+        "value": "County",
+        "ruler": "Count"
     }
 ]

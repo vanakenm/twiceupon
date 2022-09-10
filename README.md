@@ -4,6 +4,10 @@ A fantasy world text based generator
 
 ## Versions
 
+### v-1 Epoch
+
+In xxx after y
+
 ### v0: Once upon a time
 
 Single screen, "Our story begins in the <kingdom> of <name>".

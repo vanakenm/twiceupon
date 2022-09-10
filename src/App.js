@@ -1,5 +1,7 @@
-import types from './data/types.json'
-import names from './data/names.json'
+import types from './data/types.json';
+import names from './data/names.json';
+import firstNames from './data/firstNames.json';
+import surnames from './data/surnames.json';
 import StartEpisode from './episodes/StartEpisode';
 import RulerEpisode from './episodes/RulerEpisode';
 import { useState } from 'react';
@@ -23,12 +25,16 @@ function App() {
   }
 
   let regionName = random(names);
-  let regionKind = random(types).value;
+  let region = random(types)
+  let regionKind = region.value;
+  let regionRulerKind = region.ruler;
+  let rulerName = random(firstNames).name;
+  let rulerSurname = random(surnames);
 
   return (
     <>
     <StartEpisode regionKind={regionKind} regionName={regionName} />
-    <RulerEpisode regionKind={regionKind} regionName={regionName} />
+    <RulerEpisode rulerName={rulerName} rulerSurname={rulerSurname} regionRulerKind={regionRulerKind} regionName={regionName} />
     
     <span className="bg-purple-100 bg-purple-200 bg-geen-100 bg-green-200 bg-blue-100 bg-blue-200 bg-red-100 bg-red-200"></span>
     </>
