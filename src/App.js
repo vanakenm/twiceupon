@@ -1,4 +1,5 @@
 import types from './data/types.json'
+import names from './data/names.json'
 import StartEpisode from './episodes/StartEpisode';
 import RulerEpisode from './episodes/RulerEpisode';
 import { useState } from 'react';
@@ -21,8 +22,9 @@ function App() {
     setCurrentEpisode(currentEpisode + 1);
   }
 
-  let regionName = "Agincourt";
+  let regionName = random(names);
   let regionKind = random(types).value;
+
   return (
     <>
     <StartEpisode regionKind={regionKind} regionName={regionName} />
