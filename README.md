@@ -2,50 +2,67 @@
 
 A fantasy world text based generator
 
-## Versions
-
-### v1: Arrays
-
-Per episode:
-
-- color (or random)
-- text
-  - with placeholders for variables
-  - create/use a basic template system?
-  - just interpolate variables? (works if the array is created after the context hash is available)
-
-Big hash for the "context" info
-
 ## UX
 
-Full page "screens"
+### Steps (on the side)
 
-- Arrow down to go to the next one
-- Small sidebar with the list
-- Clicking on a colored word allow to change it (reroll or select)
-  - This impacts the next screens!
+- Foldable menu
 
-## Later
+### Summary
 
-Models: Episode array - text with placeholders, name, data (code/value of what's needed there)
-- If no episode create the first one
-- When down arrow - go to next episode or create
-- If not at episode 1, show top arrow to (next/previous)
+- Simple story summary on a single screen
 
-Data
+### Load/Save (local storage)
 
-- save all results as a simple array that could be locally save (local storage or even url param)
-- or as "token" that can be send again to url (token=XXX -> recreate story)
+### Update elements 
 
-### Sub region & rulers
+On hover, show a little icon (or two)
 
-### Relations
+- Reroll
+- Choose
 
+## Context
 
-### Factions
+- Add colors to elements (so that they are stable)
+- Add types to elements
+  - Person
+  - Place
+  - Event
+    - Resolution?
+
+- Save/Load from local storage (possibly with a generated title)
 
 ### Events
 
-- Place events
-- People events
-- Relation events
+Region events:
+
+- Simple Events are related to a single place
+    - Famine
+    - Sickness
+      - The [elderly] started to feel a strange [] 
+    - Monster attack
+    - Magical disturbance ("A portal opens in X")
+    - Unrest
+
+- Bilateral events are related to two places/their relations
+    - War
+    - Alliance
+    - Trade
+
+People Events
+
+  - Mariage
+  - Sickness
+  - Death
+
+### People
+
+- Add adjectives to them (good or bad)
+
+### Relations
+
+- Between two people
+  - Good: Friends, Lovers
+  - Bad: Enemies, Rivals
+  - Neutral: Family, Colleagues, etc
+

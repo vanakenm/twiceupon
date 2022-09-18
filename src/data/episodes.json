@@ -1,0 +1,17 @@
+[
+    {
+      "id": "epoch",
+      "name": "Epoch",
+      "template": "In {{ year }} after {{ epoch.value }}"
+    },
+    {
+      "id": "start",
+      "name": "Start",
+      "template": "Our story begins in the {{ regionType.value }} of {{ regionName }}"
+    },
+    {
+      "id": "ruler",
+      "name": "Ruler",
+      "template": "In {{ year }} {{ epoch.code }}, {{ ruler.name }} {{ ruler.surname }} was {{ ruler.title }} of {{ regionName }}"
+    }
+]
