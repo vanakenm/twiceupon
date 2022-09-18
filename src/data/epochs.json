@@ -1,0 +1,12 @@
+[
+    { "code": "RK", "value": "The Reckoning"},
+    { "code": "FA", "value": "The Fall"},
+    { "code": "BK", "value": "The Breaking"},
+    { "code": "AP", "value": "The Apocalypse"},
+    { "code": "LP", "value": "The Last Prophet's Death"},
+    { "code": "FFC", "value": "The Founding of the First City"},
+    { "code": "SA", "value": "The Sack of the First City"},
+    { "code": "AC", "value": "The Catastrophe"},
+    { "code": "YOP", "value": "The Year of the Prophet"},
+    { "code": "GW", "value": "The Great War"}
+]

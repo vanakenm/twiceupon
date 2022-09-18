@@ -2,19 +2,31 @@
     {
         "code": "kg",
         "value": "Kingdom",
-        "ruler": "King"
+        "ruler": { 
+            "M" : "King",
+            "F" : "Queen"
+        }
         },{
         "code": "pd",
         "value": "Princedom",
-        "ruler": "Prince"
+        "ruler": { 
+            "M" : "Prince",
+            "F" : "Princess"
+        }
     },
     {
         "code": "dc",
         "value": "Duchy",
-        "ruler": "Duke"
+        "ruler": { 
+            "M" : "Duke",
+            "F" : "Duchess"
+        }
     },{
         "code": "ct",
         "value": "County",
-        "ruler": "Count"
+        "ruler": { 
+            "M" : "Count",
+            "F" : "Countess"
+        }
     }
 ]

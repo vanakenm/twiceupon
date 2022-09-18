@@ -4,26 +4,17 @@ A fantasy world text based generator
 
 ## Versions
 
-### v-1 Epoch
-
-In xxx after y
-
-### v0: Once upon a time
-
-Single screen, "Our story begins in the <kingdom> of <name>".
-
-Big text, highlight on the words
-
 ### v1: Arrays
 
-Get datas for:
+Per episode:
 
-- place name (using list of nobles names from France)
-- place kind (Duchy/Kingdom/Empire/etc)
+- color (or random)
+- text
+  - with placeholders for variables
+  - create/use a basic template system?
+  - just interpolate variables? (works if the array is created after the context hash is available)
 
-### v2: Lord
-
-"At that time, <lord> was the ruler of <place>."
+Big hash for the "context" info
 
 ## UX
 
