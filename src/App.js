@@ -3,8 +3,8 @@ import names from './data/names.json';
 import firstNames from './data/firstNames.json';
 import surnames from './data/surnames.json';
 import epochs from './data/epochs.json';
-import episodes from './data/episodes.json';
-import Episode from './episodes/Episode';
+import episodes from './episodes/episodes.json';
+import Episode from './components/Episode';
 import { random } from './utils/utils';
 
 function createContext() {
@@ -36,11 +36,11 @@ function App() {
     <>
     { renderEpisodes(episodes, context) }
     <span className="
-      bg-red-100 bg-red-200 text-red-400
-      bg-green-100 bg-green-200 text-green-400
-      bg-teal-100 bg-teal-200 text-teal-400
-      bg-purple-100 bg-purple-200 text-purple-400
-      bg-blue-100 bg-blue-200 text-blue-400
+      bg-red-100 bg-red-200 text-red-400 hover:bg-red-200 hover:bg-red-300
+      bg-green-100 bg-green-200 text-green-400 hover:bg-green-200 hover:bg-green-300
+      bg-teal-100 bg-teal-200 text-teal-400 hover:bg-teal-200 hover:bg-teal-300
+      bg-purple-100 bg-purple-200 text-purple-400 hover:bg-purple-200 hover:bg-purple-300
+      bg-blue-100 bg-blue-200 text-blue-400 hover:bg-blue-200 hover:bg-blue-300
       rounded-lg" /> 
     </>
   );
