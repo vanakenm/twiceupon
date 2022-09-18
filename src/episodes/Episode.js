@@ -41,8 +41,13 @@ export default function Episode(props) {
         return chunks.map((chunk, index) => {
             if(chunk.includes("{{")) {
                 let color = random(colorArray);
-                return <span key={index} className={`my-10 px-4 ml-4 rounded-lg text-${color}-400 bg-${color}-100`}>{Mustache.render(chunk, context)}</span>
-            } else {
+                // On hover, show reroll (reroll key)
+                let key = chunk.split("{{")[1].split("}}")[0].split(".")[0];
+                return (
+                    <span key={index} className={`my-10 px-4 ml-4 rounded-lg text-${color}-400 bg-${color}-100`}>
+                        {Mustache.render(chunk, context)}
+                        <span className="text-sm relative top-1 right-1">{key}</span>
+                    </span>)           } else {
                 return <span key={index}>{chunk}</span>;
             }
         });
