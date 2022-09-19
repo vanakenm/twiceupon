@@ -9,7 +9,7 @@ import { random } from './utils/utils';
 
 function createContext() {
   let regionName = random(names);
-  let regionType = random(types)
+  let regionType = random(types);
   let rulerFirstName = random(firstNames);
   let rulerSurname = random(surnames);
   let epoch = random(epochs);

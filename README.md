@@ -19,6 +19,11 @@ A fantasy world text based generator
 On hover, show a little icon (or two)
 
 - Reroll
+  - Almost there
+  - Need a way to either setContext 
+  - or (better) "reroll(key)" function (that would then call setContext)
+  - Need to "pass it down"
+
 - Choose
 
 ## Context
