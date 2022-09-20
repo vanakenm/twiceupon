@@ -2,16 +2,16 @@
     {
       "id": "epoch",
       "name": "Epoch",
-      "template": "In {{ year }} after {{ epoch.value }}"
+      "template": "In {{ year.data }} after {{ epoch.data.value }}"
     },
     {
       "id": "start",
       "name": "Start",
-      "template": "Our story begins in the {{ regionType.value }} of {{ regionName }}"
+      "template": "Our story begins in the {{ regionType.data.value }} of {{ regionName.data }}"
     },
     {
       "id": "ruler",
       "name": "Ruler",
-      "template": "In {{ year }} {{ epoch.code }}, {{ ruler.name }} {{ ruler.surname }} was {{ ruler.title }} of {{ regionName }}"
+      "template": "In {{ year.data }} {{ epoch.data.code }}, {{ rulerFirstName.data.name }} {{ rulerSurname.data }} was {{ regionType.data.rulerName }} of {{ regionName.data }}"
     }
 ]

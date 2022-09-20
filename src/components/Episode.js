@@ -43,7 +43,7 @@ export default function Episode(props) {
                 let color = random(colorArray);
                 let key = chunk.split("{{")[1].split("}}")[0].split(".")[0];
                 return (
-                    <Tag key={key} color={color} chunk={chunk} context={context}/>)           
+                    <Tag key={index} data={key} color={color} chunk={chunk} context={context} reroll={props.reroll} />)           
             } else {
                 return <span key={index}>{chunk}</span>;
             }

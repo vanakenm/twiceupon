@@ -6,6 +6,7 @@ import epochs from './data/epochs.json';
 import episodes from './episodes/episodes.json';
 import Episode from './components/Episode';
 import { random } from './utils/utils';
+import { useState } from 'react';
 
 function createContext() {
   let regionName = random(names);
@@ -16,19 +17,38 @@ function createContext() {
   let year = (Math.random() * 1000).toFixed(0);
 
   return {
-    regionName: regionName,
-    regionType: regionType,
-    ruler: { name: rulerFirstName.name, gender: rulerFirstName.gender, title: regionType.ruler[rulerFirstName.gender], surname: rulerSurname },
-    epoch: epoch,
-    year: year
+    regionName: { data: regionName, topic: "region" },
+    regionType: { data: {...regionType, rulerName: regionType.ruler[rulerFirstName.gender], topic: "region"}}, 
+    rulerFirstName: { data: rulerFirstName, topic: "ruler" },
+    rulerSurname: { data: rulerSurname, topic: "ruler" },
+    epoch: { data: epoch, topic: "epoch" },
+    year: { data: year, topic: "year" },
   };
 }
 function App() {
-  let context = createContext();
+  const [context, setContext] = useState(createContext());
+
+  function reroll(name) {
+    let topic = context[name.trim()].topic;
+
+    let newContext = {...context};
+    if(topic === "region") {
+      newContext.regionName.data = random(names);
+      newContext.regionType.data = random(types);
+    } else if(topic === "ruler") {
+      newContext.rulerFirstName.data = random(firstNames);
+      newContext.rulerSurname.data = random(surnames);
+    } else if(topic === "epoch") {
+      newContext.epoch.data = random(epochs);
+    } else if(topic === "year") {
+      newContext.year.data = (Math.random() * 1000).toFixed(0);
+    }
+    setContext(newContext);
+  }
 
   function renderEpisodes(episodes, context) {
     return (
-      episodes.map((ep, index) => <Episode key={ep.id} context={context} episode={ep} previous={ episodes[index - 1]?.id } next={ episodes[index + 1]?.id } />)
+      episodes.map((ep, index) => <Episode reroll={reroll} key={ep.id} context={context} episode={ep} previous={ episodes[index - 1]?.id } next={ episodes[index + 1]?.id } />)
     );
   }
 
